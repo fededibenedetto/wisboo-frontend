@@ -1,9 +1,0 @@
-.row.tab-no-paddding
-  .col-xs-12
-    h3.foros-heading
-      = "{{'discussions.title'|translate}}"
-      a.pull-right.small aria-expanded="false" data-toggle="collapse" href="#foros-new-post" ng-if="canCreate"
-        = "{{'discussions.new'|translate}} "
-        i.fa.fa-plus-circle.fa-lg
-      hr
-    div ng-controller='ThreadCreateController' ng-include="templateFolder + 'new.html'"

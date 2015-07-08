@@ -1,9 +1,0 @@
-.form-group
-  label.text-uppercase for="title" = "{{'threads.title'|translate}}:"
-  .input-group
-    input.form-control.small ng-model="thread.title" ng-model-options="{updateOn: 'default blur'}" type="text" ng-maxlength=80 maxlength=80 ng-required="true" placeholder="{{template + '.title_placeholder'|translate}}"
-    span.input-group-addon = "{{80 - thread.title.length}}"
-div ng-include="commonFolder + '_form.html'"
-.form-group ng-if="showCategories()"
-  label.text-uppercase for="categorias" = "{{'threads.categories'|translate}}"
-  select.form-control.small ng-model="thread.category_id" ng-options=("category.id as category.name for category in categories") ng-required="showCategories()"
