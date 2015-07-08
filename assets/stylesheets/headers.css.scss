@@ -1,0 +1,11 @@
+@import "color.css.scss";
+@import "fonts.css.scss";
+
+h1 {
+  font-family: $open-sans-condensed;
+  font-size: 64px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $darkest-grey;
+  margin-bottom: 15px;
+}

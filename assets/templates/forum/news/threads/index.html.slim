@@ -1,0 +1,10 @@
+div ng-include="templateFolder + '_title.html'"
+.row.no-courses ng-show='count == 0' ng-cloak=true class='ng-cloak'
+  .col-xs-12
+    .well.well-lg.text-center
+      = "{{'no_news'|translate}}"
+.row
+  .col-xs-12
+    .col-xs-12.novePost ng-repeat=("thread in threads")
+      div ng-include="commonFolder + '_thread.html'"
+div ng-include="commonFolder + '_see_more.html'"

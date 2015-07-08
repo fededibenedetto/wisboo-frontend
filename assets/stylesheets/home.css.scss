@@ -1,0 +1,60 @@
+@import "color.css.scss";
+
+.home-first-image {
+  padding-top: 80px;
+  background-image: image-url('home_slide1.jpg');
+  background-size: 100%;
+  background-position: center;
+  height: 600px;
+  h1:last-of-type, h5:last-of-type {
+    margin-bottom: 20px;
+  }
+}
+
+.one-time {
+  width: calc(100% - 70px);
+  margin-left: auto;
+  margin-right: auto;
+  .thematic-wrapper {
+    width: 200px;
+  }
+  .slick-prev, .slick-next {
+    line-height: 35px;
+  }
+  .slick-next:before {
+    font-family: FontAwesome;
+    content: '\f105';
+    color: $dark-grey;
+    font-size: 35px;
+    float: right;
+  }
+  .slick-prev:before {
+    font-family: FontAwesome;
+    content: '\f104';
+    color: $dark-grey;
+    font-size: 35px;
+    float: left;
+  }
+  .channel-image {
+    width: 200px;
+    height: 200px;
+  }
+  img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.partner-wrapper, .sponsor-wrapper, .press-wrapper {
+  img {
+    width: 128px;
+  }
+}
+.press-wrapper {
+  .inline {
+    padding-right: 60px;
+  }
+  .inline:last-child {
+    padding-right: 0px;
+  }
+}

@@ -1,0 +1,9 @@
+.row.tab-first-row
+  .col-xs-12
+    h3
+      = "{{'news.title'|translate}}"
+      a.pull-right.small aria-expanded="false" data-toggle="collapse" href="#novedades-new-post" ng-if="canCreate"
+        = "{{'news.new'|translate}} "
+        i.fa.fa-plus-circle.fa-lg
+      hr
+    div ng-controller='ThreadCreateController' ng-include="templateFolder + 'new.html'"

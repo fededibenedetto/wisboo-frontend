@@ -1,0 +1,98 @@
+@import "color.css.scss";
+
+.section {
+  &.col-2 .first-col {
+    margin-right: 40px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  .sponsor-wrapper {
+    padding-right: 40px;
+    border-right: 1px solid $dark-grey;
+  }
+}
+
+.header-navbar {
+  background: $dark-grey;
+  transition: background 0.5s ease;
+  z-index: 1;
+  &.at-top {
+    background: transparent;
+    transition: background 0.5s ease;
+  }
+  .header-container {
+    display: block;
+    width: 940px;
+    margin: 0 auto;
+  }
+  ul.header-nav {
+    list-style: none;
+    li {
+      /*
+      margin: 0 20px;
+      line-height: 60px;
+      display: inline-block;
+      */
+      a {
+        color: inherit;
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+.content-header {
+  margin-top: 40px;
+}
+
+.navbar-default .navbar-nav > li {
+  > a {
+    color: $white;
+    line-height: 50px;
+  }
+  &.header-nav > a {
+    &:hover {
+      color: $bright-light-blue;
+      background-color: $white;
+    }
+    &:active {
+      color: $fuccia;
+      background-color: $white;
+    }
+  }
+}
+
+i.fa.fa-bell-o.fa-lg {
+  color: $medium-grey;
+}
+
+span.badge {
+  background-color: $fuccia;
+  vertical-align: super;
+  margin-left: -8px;
+}
+
+.navbar-default {
+  .navbar-nav .open .dropdown-menu > li > a {
+    &:hover, &:focus {
+      background-color: $bright-light-blue;
+    }
+  }
+  background: $dark-grey;
+}
+
+a.navbar-brand {
+  padding: 5px 0px 5px 40px;
+}
+
+.navbar-brand img {
+  height: 43px;
+}
+
+.navbar-default .navbar-nav > .open > a {
+  background-color: transparent;
+  &:hover, &:focus {
+    background-color: transparent;
+  }
+}

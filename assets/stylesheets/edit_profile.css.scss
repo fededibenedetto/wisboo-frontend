@@ -1,0 +1,333 @@
+@import "fonts.css.scss";
+@import "color.css.scss";
+
+
+.edit-profile{
+  display: inline-block;
+  margin-bottom: 100px;
+  width: 670px;
+  .form-horizontal {
+    .controls {
+      margin-left: 175px;
+    }
+    .controls-channel {
+      margin-left: 130px;
+    }
+    .controls-half {
+      margin-left: 130px;
+    }
+    .controls-half.last {
+      margin-left: 142px;
+    }
+    .controls-check {
+      margin-left: 545px;
+    }
+  }
+  .title-underlined{
+    position: relative;
+    border-bottom: solid 1px $color-gray-border;
+    padding-bottom: 5px;
+    margin-bottom: 27px;
+    h3{
+      font-family: "Open Sans Condensed", sans-serif;
+      font-weight: bold;
+      line-height: 40px;
+      margin: 0;
+      letter-spacing: 0;
+      text-transform: uppercase;
+      color: #393841;
+    }
+    .row {
+      padding: 10px 0
+    }
+  }
+  .progress-menu{
+    width: 200px;
+    margin-top: 16px;
+    margin-right: 25px;
+    float: left;
+    overflow: hidden;
+    height: 13px;
+    #progress-menu{
+      background-color: $fuccia;
+      height: 12px;
+      overflow: hidden;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+    }
+  }
+  .linkedin-form{
+    position: relative;
+    width: 95px;
+    float: left;
+    .text{
+      font-size: 10px;
+      width: 95px;
+      text-align: right;
+      line-height: 12px;
+      padding-top: 10px;
+      &:hover:after{
+        content: attr(replace);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        line-height: 44px;
+        background-color: white;
+        font-size: 12px;
+      }
+    }
+  }
+  .icon-bar-linkedin {
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+  select {
+    border-radius: 0;
+    height: 50px;
+    font-size: 14px;
+    background-color: #fff;
+    &.large {
+      width: 475px;
+    }
+    &.medium {
+      width: 161px;
+    }
+  }
+  input, textarea{
+    font-size: 14px;
+    border-radius: 0;
+    min-height: 40px;
+    line-height: 20px;
+    resize: none;
+    &.large{
+      width: 475px;
+    }
+    &.medium{
+      width: 156px;
+    }
+    &[type=date]{
+      width: 170px;
+    }
+    &.with-add-on {
+      width: 200px;
+    }
+  }
+
+  textarea{
+    height: 100px;
+    &.long{
+      height: 300px;
+    }
+    &.channel-name-textarea {
+      height: 50px;
+    }
+  }
+  .control-group {
+    position: relative;
+    padding: 20px 0;
+    &.multiple {
+      height: 200px;
+    }
+    &.wistia {
+      .control-label {
+        margin-top: 10px;
+      }
+    }
+    label{
+      font-family: $open-sans;
+      font-size: 18px;
+      font-weight: lighter;
+      text-align: left;
+      color: $color-gray-font;
+      float: left;
+      &[for=user_role]{
+        margin-left: 39px;
+        margin-right: 15px;
+      }
+
+      &[for=user_position]{
+        margin-left: 57px;
+        margin-right: 15px;
+      }
+
+
+      &[for=user_gender]{
+        margin-left: 8px;
+        margin-right: 15px;
+        float: none;
+      }
+
+    }
+    .subtext{
+      font-style: italic;
+      color: $color-gray-font;
+      position: absolute;
+      left: 0;
+      top: 45px;
+      &.double-line{
+        margin-top: 25px;
+      }
+      &.favicon-input {
+        left: 219px;
+        top: 61px
+      }
+      &.logo-input {
+        left: 476px;
+        top: 58px
+      }
+      &.slider-input {
+        left: 176px;
+        top: 61px
+      }
+    }
+    .title{
+      float: left;
+    }
+    .social-form{
+      margin-left: 175px;
+      margin-bottom: 20px;
+      .icon{
+        display:inline-block;
+        width: 40px;
+        font-size: 25px;
+        text-align: center;
+      }
+      input{
+        width: 435px;
+      }
+      label{
+        width: 100px;
+      }
+    }
+    #user_gender{
+      width: 142px;
+    }
+  }
+
+  .date-fields{
+    display: inline-block;
+    margin-right: 55px;
+    select{
+      width: 53px;
+      margin-right: 10px;
+      text-align: center;
+    }
+
+    select:last-child{
+      width: 70px;
+    }
+  }
+
+  .form-icon.tooltip-form.tooltip-check {
+    margin-left: 38px;
+    &.subdomain {
+      margin-left: 8px;
+    }
+  }
+  .form-icon{
+    height: 15px;
+    width: 20px;
+    right: 0;
+    display: inline-block;
+    &.tooltip-form{
+      background-image: asset-url("form_tooltip.png");
+      width: 20px;
+      background-repeat: no-repeat;
+      background-position: right;
+      vertical-align: middle;
+      &:hover{
+        background-image: asset-url("form_tooltip_hover.png");
+      }
+    }
+    &.add-form{
+      background-image: asset-url("add_more_form.png");
+      background-position: right;
+      background-repeat: no-repeat;
+      vertical-align: bottom;
+      &:hover{
+        background-image: asset-url("add_more_form_hover.png");
+      }
+    }
+    a{
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+
+  .flat-button {
+    margin-right: 20px;
+  }
+
+  .flat-button.preferences {
+    margin-right: 8px;
+  }
+
+  .controls ul{
+    clear: none !important;
+    width: 467px;
+  }
+}
+
+.edit-profile {
+    textarea {
+    vertical-align: middle;
+  }
+}
+
+.bootstrap-switch {
+  border-color: #cccccc !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none;
+}
+
+.flat-button{
+  border: 0;
+  display: inline-block;
+  text-align: center;
+  color: white;
+  margin: 10px 1px;
+  padding: 5px 0;
+  width: 104px;
+  font-family: 'Open Sans', 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+
+  &.blue{
+    background-color: #04B7F1;
+  }
+}
+
+.user-panel-list {
+  padding-left: 0;
+}
+
+a.public-profile {
+  padding: 18px 20px;
+  font-size: 16px;
+}
+
+.bootstrap-switch-on-color {
+  background-color: $fuccia;
+}
+
+.bootstrap-switch-off-color {
+  background-color: $dark-grey;
+}
+
+.input-group.subdomain {
+  width: 350px;
+
+  .input-group-addon {
+    color: $grey;
+  }
+}
+
+a.see-channel {
+  font-size: 12px;
+  color: $bright-fuccia;
+}

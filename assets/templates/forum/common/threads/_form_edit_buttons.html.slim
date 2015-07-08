@@ -1,0 +1,5 @@
+button.btn.btn-info.small.pull-right type="submit" ng-disabled="threadForm.$invalid||request_sent"
+  span ng-show="!request_sent" = "{{'save'|translate}}"
+  span ng-show="request_sent" = "{{'saving'|translate}}"
+a.btn.btn-default.small.pull-right ui-sref="threads()"
+  = "{{'cancel'|translate}}"

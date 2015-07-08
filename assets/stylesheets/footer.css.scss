@@ -1,0 +1,23 @@
+@import "color.css.scss";
+.footer {
+  .footer-header {
+    margin-bottom: 20px;
+    .twitter-footer, .facebook-footer, .linkedin-footer {
+      color: $dark-grey;
+      background: $white;
+      width: 25px;
+      height: 25px;
+      border-radius: 2px;
+      line-height: 25px;
+      font-size: 20px;
+      text-align: center;
+      margin: 0 5px;
+    }
+  }
+  .footer-body {
+    a {
+      display: block;
+      font-weight: 300;
+    }
+  }
+}

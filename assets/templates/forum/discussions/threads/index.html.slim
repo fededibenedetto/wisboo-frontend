@@ -1,0 +1,43 @@
+div ng-include="templateFolder + '_title.html'"
+.row
+  .col-xs-12
+    div ng-include="templateFolder + '_search.html'"
+br
+.row ng-cloak=true class='ng-cloak' ng-if='noThreads()'
+  .col-xs-12
+    .well.well-lg.text-center
+      = "{{template + '.no_threads'|translate}}"
+.row
+  .col-xs-12
+    div ng-repeat=("thread in threads")
+      .row.discussion
+        .col-xs-8
+          span.rating
+            span.star
+          span.discussion-title
+            a data-content="{{thread.title}}" data-placement="bottom" data-toggle="popover" data-trigger="hover" href="#" rel="popover" ui-sref="viewThread({id:thread.id})" bs-popover=true ng-if="thread.title.length > 42"
+              = "{{thread.title}}"
+            a data-content="{{thread.title}}" href="#" ui-sref="viewThread({id:thread.id})" ng-if="thread.title.length <= 42"
+              = "{{thread.title}}"
+          br
+          .smallest.col-xs-12
+            = "{{'threads.created_by'|translate}}"
+            strong = " {{thread.original_post.user.full_name}} "
+            span.time-ago.text-lowercase am-time-ago='thread.original_post.created_at'
+        .col-xs-4 ng-controller='PostsController'
+          .leidas
+            span.leidas-number = '{{thread.unread_answers_count}}'
+            br/
+            span.text-uppercase
+              = "{{'threads.unread'|translate}}"
+          .respuestas
+            .pull-right.show-on-hover
+              i.fa.fa-pencil-square-o data-placement="bottom" data-toggle="tooltip" title="{{'edit'|translate}}" ui-sref='editThread({id:thread.id})'
+              | &nbsp;&nbsp;
+              i.fa.fa-close data-placement="bottom" data-toggle="tooltip" data-original-title="{{'delete'|translate}}" ng-click='deleteThread(thread, $index)' ng-if='thread.can_delete'
+            span.respuestas-number = '{{thread.answers_count}}'
+            br
+            span.text-uppercase
+              = "{{'threads.read'|translate}}"
+      hr
+div ng-include="commonFolder + '_see_more.html'"

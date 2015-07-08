@@ -1,0 +1,72 @@
+@import "color.css.scss";
+
+.free-answer {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  min-height: 315px
+}
+
+.carousel-inner .item {
+  min-height: 563.875px;
+}
+
+.dropdown.dropdown-accordion {
+  margin-bottom: 6px;
+}
+
+.dropdown-icons {
+  width: 26px;
+  height: 26px;
+}
+
+.dropdown-icons.none-progress {
+  background-position: -106px 0;
+}
+
+.dropdown-icons.half-progress {
+  background-position: -73px 0;
+}
+
+.dropdown-icons.full-progress {
+  background-position: 0 0;
+}
+
+.btn.course-index {
+  border: none;
+}
+
+#contents-carousel {
+  .tooltip {
+    text-transform: uppercase;
+  }
+}
+
+div#carousel-text {
+  padding: 5px 20px 12px;
+}
+
+.course-user-thumb {
+  min-height: 300px;
+  h5 {
+    text-transform: uppercase;
+  }
+}
+
+#raty {
+  padding: 10px 0;
+}
+
+#contents-carousel .carousel-control.right#next-unit,
+#contents-carousel .carousel-control.left#prev-unit {
+  color: $bright-light-blue;
+}
+
+.large-tooltip .tooltip-inner {
+  width: 135px;
+}
+
+.discussion {
+  padding-top: 30px;
+  padding-left: 10px;
+}

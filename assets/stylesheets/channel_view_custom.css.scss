@@ -1,0 +1,251 @@
+@import "color.css.scss";
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+a.payment {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  color: $dark-fuccia;
+}
+
+img.prof {
+  width: 40px;
+  margin-right: 10px;
+}
+
+img.course-thumb {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.course-listing.ng-enter,
+.course-listing.ng-leave,
+.course-listing.ng-move {
+  -webkit-transition: 0.25s linear all;
+  -moz-transition: 0.25s linear all;
+  -o-transition: 0.25s linear all;
+  transition: 0.25s linear all;
+}
+
+.course-listing.ng-enter,
+.course-listing.ng-move {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.course-listing.ng-move.ng-move-active,
+.course-listing.ng-enter.ng-enter-active {
+  opacity: 1;
+  height: 120px;
+}
+
+.course-listing.ng-leave {
+  opacity: 1;
+  overflow: hidden;
+}
+
+.course-listing.ng-leave.ng-leave-active {
+  opacity: 0;
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+i.fa.fa-angle-right.fa-4x.carousel-control.right,
+i.fa.fa-angle-left.fa-4x.carousel-control.left {
+  top: 30%;
+}
+
+button.more-courses{
+  margin-top: 35px;
+  .btn.btn-primary.btn-block:hover,
+  .btn.btn-primary.btn-block:active,
+  .btn.btn-primary.btn-block:focus {
+    color: #333;
+  }
+}
+
+button.categories-dropdown {
+  border-left: none;
+  border-right: none;
+}
+
+#channel-home.container {
+  min-height: 350px;
+}
+
+#channel-courses {
+  .courses-search {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    input {
+      height: 52px;
+    }
+    span.fa.fa-search {
+      top: 60px;
+      right: 35px;
+    }
+  }
+}
+
+.no-courses {
+  padding-bottom: 300px;
+}
+
+.user-thumb {
+  width: 215px;
+  height: 215px;
+}
+
+.flag {
+  right: 14px;
+  top: 99px;
+  position: absolute;
+}
+
+.tab-content {
+  padding-bottom: 80px;
+  min-height: 400px;
+}
+
+.nav.nav-tabs {
+  min-height: 400px;
+}
+
+.row#channel-courses {
+  padding-top: 0px;
+}
+
+.login-in-tab a {
+  line-height: 45px
+}
+
+#channel-info {
+  .login-in-tab a {
+    line-height: normal;
+  }
+}
+
+#comunidad, #cursos {
+  hr {
+    margin-top: 12px;
+  }
+}
+
+.users .user-name {
+  height: 50px;
+  overflow: hidden;
+}
+
+.users .user-header {
+  height: 43px;
+  overflow: hidden;
+  display: block;
+}
+
+.caption-text p {
+  white-space: pre-line;
+  height: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.post-user-avatar {
+  width: 50px;
+  height: 50px;
+}
+
+.post-image-container {
+  width: 470px;
+  height: 352px;
+  background-color: #F5F5F6;
+  img {
+    width: 100%;
+  }
+}
+
+.post {
+  min-height: 60px;
+}
+
+.tab-first-row {
+  padding-top: 30px;
+  padding-left: 10px;
+}
+
+.row.cant-post {
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.row.cant-post:hover .well {
+  background-color: #F2F2F2;
+}
+
+.channel-name {
+  font-family: "Open Sans Condensed", sans-serif;
+  line-height: 40px;
+  color: #393841;
+}
+
+.favicon-container {
+  width: 300px;
+  height: 43px;
+  display: inline-block;
+}
+
+img.favicon {
+  width: 32px;
+  height: 32px;
+}
+
+.bar-logo-container {
+  width: 300px;
+  height: 43px;
+  display: inline-block;
+  img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+.control-with-image {
+  img {
+    margin: 5px;
+    padding: 5px;
+  }
+}
+
+.control-with-image.dark-background {
+  img {
+    background-color: $dark-grey;
+    margin-left: 10px;
+  }
+}
+
+.flat-button.medium.file-button {
+  width: 150px;
+  text-transform: none;
+  vertical-align: top;
+}
+
+.user-name {
+  color: #5a5a5a;
+  display: block;
+}
+
+.user-name:hover {
+  color: #6a6a6a;
+}
+
+.course-summary-title {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inherit;
+}

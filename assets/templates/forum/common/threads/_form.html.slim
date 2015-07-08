@@ -1,0 +1,42 @@
+.form-group
+  label.text-uppercase for="body" = "{{'threads.body'|translate}}:"
+  textarea.form-control.small ng-model="thread.original_post.body" name="post_body" placeholder="{{template + '.body_placeholder'|translate}}" rows="3" ng-maxlength=3000 maxlength=3000
+span ng-show="!thread.original_post.link && !thread.original_post.media"
+  = "{{'threads.insert'|translate}} "
+  a.text-uppercase ng-click="clearUrl()"
+    = "{{'threads.url'|translate}}"
+  = " {{'threads.insert_or'|translate}} "
+  a.text-uppercase href=="&#35;{{imageCropModalId}}" data-toggle='modal'
+    = "{{'threads.image'|translate}}"
+  | .
+span ng-show="thread.original_post.link"
+  a ng-click="deleteUrl()" = "{{'media_delete'|translate}}"
+  span ng-show="thread.original_post.link.title"
+    = " {{'media_or'|translate}} "
+    a ng-click="clearUrl()" = "{{'media_modify'|translate}}"
+  = " {{'media_link'|translate}}"
+span ng-show="thread.original_post.media"
+  a ng-click="deleteImage()" = "{{'media_delete'|translate}}"
+  span ng-show='thread.original_post.media.file'
+    = " {{'media_or'|translate}} "
+    a  href=="&#35;{{imageCropModalId}}" data-toggle='modal' = "{{'media_modify'|translate}}"
+  = " {{'media_image'|translate}}"
+.link-form-container
+  .form-group#link-form collapse="!thread.original_post.link"
+    div ng-show="!thread.original_post.link.title"
+      label.text-uppercase for="media-url" = "{{'threads.url'|translate}}:"
+      input#media-url.form-control type='url' http-prefix=true ng-model="thread.original_post.link.url"  placeholder="{{'threads.url_placeholder'|translate}}" ng-enter="getUrlMetadata()"
+      .row ng-show="linkError || retrievingMetadata"
+        .col-xs-12
+          br
+          .well.well-lg.text-center
+            span ng-show="linkError && !retrievingMetadata" = '{{linkError}}'
+            span ng-show="retrievingMetadata" = "{{'threads.url_loading'|translate}}"
+    div ng-show="thread.original_post.link.title"
+      .row.link-preview ng-include="commonFolder + '_post_link.html'"
+div ng-include="commonFolder + '_image_crop_modal.html'"
+div ng-include="commonFolder + '_post_image.html'"
+.row ng-cloak=true class='ng-cloak' ng-if=('publish_error')
+  .col-xs-12
+    .well.well-lg.text-center
+      = "{{'threads.publish_error'|translate}}"

@@ -1,0 +1,27 @@
+i.material-icons {
+  font-size: 16px;
+  color: #999;
+}
+i.material-icons.lock {
+  margin-top: 25px;
+  position: absolute;
+  left: 0px;
+  background-color: rgb(238, 76, 155);
+  padding: 6px;
+  color: white;
+  height: 28px;
+  width: 28px;
+  border-radius: 28px;
+}
+.cursos-menu {
+  background-color: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid !important;
+  font-size: 16px !important;
+  padding: 10px 0px !important;
+}
+
+li.active .cursos-menu{
+  color: #04B7F1 !important;
+
+}

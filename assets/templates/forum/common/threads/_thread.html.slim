@@ -1,0 +1,34 @@
+div ng-include="templateFolder + '_post_header.html'"
+div ng-include="templateFolder + '_post_body.html'"
+.comments ng-controller='PostsController'
+  .novePostFooter.row.smallest
+    .col-xs-12
+      em ng-if=('!thread.closed')
+        = "{{template + '.comments'|translate}}"
+        |  ( 
+        span.comments-number = '{{thread.answers_count}}'
+        |  )
+      ul.list-inline.pull-right
+        li
+          a#share-popover bs-popover-html=true  data-container="body" data-placement="bottom" data-toggle="popover" data-content-id="#share-content"
+            i.fa.fa-share-alt.compartir
+            = " {{'share'|translate}}"
+          #share-content.hidden
+            ul.list-inline.class-social-icons
+              li
+                a href="http://www.facebook.com/sharer.php?u=http://www.wisboo.com" target="_blank" title=("Click to share")
+                  span.fa-stack.fa-lg
+                    i.fa.fa-circle-thin.fa-stack-2x
+                    i.fa.fa-facebook.fa-stack-1x
+              li
+                a href="http://twitter.com/share?url=http://www.wisboo.com" target="_blank" title=("Click to post to Twitter")
+                  span.fa-stack.fa-lg
+                    i.fa.fa-circle-thin.fa-stack-2x
+                    i.fa.fa-twitter.fa-stack-1x
+              li
+                a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=wisboo.com" target="_blank" title=("Click to share")
+                  span.fa-stack.fa-lg
+                    i.fa.fa-circle-thin.fa-stack-2x
+                    i.fa.fa-linkedin.fa-stack-1x
+  div ng-include="commonFolder + '_posts.html'"
+hr

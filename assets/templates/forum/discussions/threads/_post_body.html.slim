@@ -1,0 +1,7 @@
+.novePostBody.row
+  .col-xs-12
+    h5.text-uppercase.strong.small = '{{thread.title}}'
+    div w-read-more="7"
+      p.small.post-body-text ng-bind-html='thread.original_post.body | linky:"_blank"'
+    div ng-if='!thread.original_post.link.url' ng-include="commonFolder + '_post_image.html'"
+  div ng-if='thread.original_post.link.title'  ng-include="commonFolder + '_post_link.html'"

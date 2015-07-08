@@ -1,0 +1,232 @@
+@import "fonts.css.scss";
+@import "color.css.scss";
+
+.user-panel-left {
+  margin-top: 60px;
+  padding-top: 15px;
+  padding-bottom: 50px;
+  width: 212px;
+  float: left;
+  &.place-top {
+    position: static;
+  }
+  &.place-float {
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+  }
+  &.place-bottom {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.user-panel-top {
+  background-color: white;
+  padding-top: 15px;
+  z-index: 1000;
+  &.place-top {
+    position: static;
+  }
+  &.place-float {
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+  }
+  &.place-bottom {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 60px;
+  }
+}
+
+.user-panel-main {
+  padding: 75px 0;
+  padding-left: 25px;
+  width: 700px;
+  display: block;
+  margin-left: 240px;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-color: $color-gray-separator;
+  min-height: 695px;
+}
+
+.user-panel-photo {
+  width: 95px;
+  height: 95px;
+}
+
+.user-panel-details > .details-top > .icons > .icon + .tooltip > .tooltip-inner {
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding: 2px 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 0px;
+}
+
+.user-panel-details {
+  padding-bottom: 24px;
+  &.underlined {
+    border-bottom: solid 1px #e2dede;
+  }
+  > .details-top {
+    display: table;
+    height: 95px;
+    > .image {
+      position: relative;
+      width: 95px;
+      height: 95px;
+      float: left;
+      a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .thumb-triangle {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        width: 8px;
+        height: 8px;
+      }
+      .thumb-link {
+        background-color: $color-gray-input;
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+        width: 100%;
+        line-height: 25px;
+        height: 25px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+        opacity: 0.75;
+      }
+    }
+    > .icons {
+      display: table-cell;
+      vertical-align: bottom;
+      padding-left: 10px;
+      height: 100%;
+      > .icon {
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        margin: 6px 0 0 0;
+      }
+    }
+  }
+
+  > .details-bottom {
+    margin-top: 13px;
+    > .user-name {
+      @include font-user-name;
+      @include font-format-truncate;
+      font-size: 17px;
+      text-transform: uppercase;
+    }
+    > .edit-profile-link {
+      font-family: $open-sans;
+      font-style: italic;
+      color: $fuccia;
+      font-size: 11px;
+      font-weight: 300;
+      margin-top: 2px;
+    }
+  }
+}
+
+.user-panel-details > .details-bottom > .user-name {
+  white-space: normal;
+}
+
+ul.user-panel-list {
+  list-style-type: none;
+  margin: 17px 0 0 0;
+  display: block;
+  > li {
+    margin-bottom: 5px;
+    a {
+      &.soon{
+        position:relative;
+        &:hover:after{
+          content: attr(replace);
+          position: absolute;
+          background-color: #f5f5f6;
+          margin: 0;
+          left: 50px;
+          top: 9px;
+          width: 70%;
+        }
+      }
+      @include font-input;
+      font-size: 12px;
+      display: block;
+      width: 100%;
+      height: 100%;
+			&.active {
+				color: $light-blue;
+			}
+      &.user-panel-sub-menu-item.active {
+        color: $fuccia;
+      }
+    }
+    .icon {
+      margin-right: 10px;
+    }
+    &:hover, &.active {
+      background-color: $color-gray-background;
+    }
+    &.user-panel-sub-menu:hover, &.user-panel-sub-menu.active {
+      background-color: transparent;
+    }
+  }
+}
+
+.user-panel-sub-menu {
+  padding-left: 33px;
+}
+
+.user-panel-sub-menu-item {
+  padding: 5px 0;
+}
+
+li.user-panel-sub-menu ul {
+  list-style-type: disc;
+}
+
+ul.user-panel-list > li li.user-panel-sub-menu-item.active a {
+  color: $fuccia;
+}
+
+.user-edit-profile {
+  display: inline-block;
+}
+
+.user-avatar-input-empty {
+  color: transparent;
+}
+
+.meta-keywords-input .bootstrap-tagsinput {
+  width: 475px;
+  border-color: rgb(169, 169, 169);
+  border-radius: 0;
+}
+
+.meta-keywords-input.controls-channel .bootstrap-tagsinput {
+  width: 520px;
+}
+
+.meta-keywords-input .tag {
+  background-color: $grey;
+}

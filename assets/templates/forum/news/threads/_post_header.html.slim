@@ -1,0 +1,6 @@
+.novePostHeader.row
+  .col-xs-12
+    i.noveDate.smallest am-time-ago='thread.original_post.created_at'
+    .pull-right.show-on-hover
+      i.fa.fa-pencil-square-o data-placement="bottom" data-toggle="tooltip" title="{{'edit'|translate}}" ui-sref='editThread({id:thread.id})' ng-if='thread.can_edit' &nbsp;&nbsp;
+      i.fa.fa-close data-placement="bottom" data-toggle="tooltip" data-original-title="{{'delete'|translate}}" ng-click='deleteThread(thread, $index)' ng-if='thread.can_delete'

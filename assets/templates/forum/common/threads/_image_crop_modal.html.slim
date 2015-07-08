@@ -1,0 +1,19 @@
+.image-crop-modal.modal.fade id='{{imageCropModalId}}'
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.pull-right.custom-flat aria-hidden="true" data-dismiss="modal" type="button"
+          i.fa.fa-times-circle.light-grey-text.mid-font.darker-hover
+          span.sr-only = "{{'close'|translate}}"
+        h5.uppercase.osans-cond.bold
+          span.small-space-right
+            i.fa.fa-caret-right.light-blue-text
+          = "{{'threads.add_image'|translate}}"
+      .modal-body
+        .form-group
+          img.img-responsive.js-cropper w-cropper=true ng-show="imageSrc" ng-src="{{imageSrc}}"
+        .row
+          .col-xs-12
+            input#thread-image ng-file-select=true type="file"
+            .form-actions.full-button.fuccia.uppercase.white-text.center-text.regular-font.small-space-top
+              buton.btn.full-button.uppercase.white-text ng-click="cropImage()" = "{{'crop_image'|translate}}"
