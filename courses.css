@@ -16,12 +16,11 @@ i.material-icons.lock {
 .cursos-menu {
   background-color: transparent !important;
   border: none !important;
-  border-bottom: 1px solid !important;
+  border-bottom: 1px solid #e2dede !important;
   font-size: 16px !important;
   padding: 10px 0px !important;
 }
 
 li.active .cursos-menu{
   color: #04B7F1 !important;
-
 }
