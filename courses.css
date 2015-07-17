@@ -23,4 +23,5 @@ i.material-icons.lock {
 
 li.active .cursos-menu{
   color: #04B7F1 !important;
+  border-bottom: 1px solid #04B7F1 !important;
 }
