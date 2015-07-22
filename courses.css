@@ -3,14 +3,12 @@ i.material-icons {
   color: #999;
 }
 i.material-icons.lock {
-  margin-top: 25px;
+  margin-top: 20px;
   position: absolute;
   left: 0px;
   background-color: rgb(238, 76, 155);
   padding: 6px;
   color: white;
-  height: 28px;
-  width: 28px;
   border-radius: 28px;
 }
 .cursos-menu {
