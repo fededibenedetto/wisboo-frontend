@@ -2,10 +2,13 @@ thead {
   background-color: gainsboro;
 }
 table.table.table-hover {
-  font-size: small;
-  font-weight: 500;
-  font-variant: initial;
+  font-size: 15px;
 }
+.edit-profile input[type="checkbox"] {
+  min-height: 0px;
+  vertical-align: middle;
+}
+/*
 .input-group-lg>.form-control, .input-group-lg>.input-group-addon, .input-group-lg>.input-group-btn>.btn{
   border-width: thin;
   height: 65px !important;
@@ -15,4 +18,19 @@ button#dropdownMenu1 {
   width: 195px !important;
   height: 65px;
   border: 1px solid #e9e9e9 !important;
+}
+*/
+
+
+.courses-search ul.dropdown-menu.dropdown-menu-right, .invite-users ul.dropdown-menu{
+  width: 200px;
+}
+
+.invite-users button#dropdownMenu1 span.caret{
+  color: #fff;
+}
+
+.invite-users button#dropdownMenu1:hover span.caret,
+.invite-users button#dropdownMenu1:focus span.caret{
+  color: #00a9e8;
 }
