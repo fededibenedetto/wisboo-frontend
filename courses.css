@@ -25,3 +25,9 @@ li.active .cursos-menu{
   color: #04B7F1 !important;
 
 }
+table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: white;
+}
