@@ -21,6 +21,12 @@ table.table.table-hover {
   background-color : #00a9e8
 }
 
+.user-small-circle-thumb {
+  height: 25px;
+  width: 25px;
+  border-radius: 25px;
+}
+
 .edit-profile i.material-icons.cross {
   padding-left: 2px;
 }
