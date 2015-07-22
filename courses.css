@@ -11,6 +11,14 @@ i.material-icons.lock {
   color: white;
   border-radius: 28px;
 }
+i.material-icons.cross {
+  background-color: #999;
+  padding: 2px;
+  padding-left: 3px;
+  color: white;
+  border-radius: 8px;
+  font-size: 12px;
+}
 .cursos-menu {
   background-color: transparent !important;
   border: none !important;
