@@ -17,7 +17,15 @@ i.material-icons.cross {
   padding-left: 3px;
   color: white;
   border-radius: 8px;
-  font-size: 12px;
+  font-size: 10px;
+}
+
+i.material-icons.cross:hover {
+  background-color: #04B7F1;
+}
+
+i.material-icons.publish:hover{
+  color: #04B7F1;
 }
 .cursos-menu {
   background-color: transparent !important;
@@ -30,4 +38,7 @@ i.material-icons.cross {
 li.active .cursos-menu{
   color: #04B7F1 !important;
   border-bottom: 1px solid #04B7F1 !important;
+}
+.col-sm-1.edit {
+  padding-top: 10px;
 }
