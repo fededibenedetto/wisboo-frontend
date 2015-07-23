@@ -1,0 +1,16 @@
+i.material-icons.plus {
+  background-color: #fc55a6;
+  color: #ffffff;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.question-mark.pull-right {
+  background-color: #00a9e8;
+  padding: 5px;
+  border-radius: 19px;
+  color: #fff;
+  font-size: 10px;
+  margin-top: 15px;
+  line-height: 5px;
+}
