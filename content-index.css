@@ -14,3 +14,46 @@ i.material-icons.plus {
   margin-top: 15px;
   line-height: 5px;
 }
+.courses-search input.form-control {
+  font-size: 13px !important;
+  font-style: italic;
+  box-shadow: none !important;
+}
+
+.form-horizontal .control-label {
+  text-align: right;
+  margin-bottom: 0;
+  font-size: larger;
+  padding-top: 13px !important;
+  font-weight: normal;
+}
+.modulo{
+  width: 400px;
+}
+.input-group-addon:last-child {
+  border-left: 0;
+  background-color: whitesmoke;
+}
+i.material-icons.cross {
+  background-color: rgb(188, 188, 188);
+  padding: 2px 2px 2px 1px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 15px;
+  line-height: 16px;
+  }
+i.material-icons.done {
+  background-color: #00a9e8;
+  padding: 2px 2px 2px 1px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 15px;
+  line-height: 16px;
+}
+
+button.guardar {
+background-color: whitesmoke;
+  color: rgb(188, 188, 188);
+}

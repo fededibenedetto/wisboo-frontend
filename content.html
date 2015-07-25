@@ -20,7 +20,7 @@
     }
   </style>
   <title>Wolox</title>
-  <link rel="stylesheet" href="content-index.css" type="text/css">
+  <link rel="stylesheet" href="courses.css" type="text/css">
   <link href="./Wolox_files/slick.css" rel="stylesheet" type="text/css">
   <link href="./Wolox_files/Logo_Pedro_Bisbal.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
   <meta content="wolox" name="description">
@@ -29,11 +29,7 @@
   <meta content="authenticity_token" name="csrf-param">
   <meta content="qJMpmEKxRQyF9XZPHy9Q63Jpct5402TJbj41/MYA9bI=" name="csrf-token">
   <meta content="wolox, rails,dev,slim" name="keywords">
-  <style>
-    .cke {
-      visibility: hidden;
-    }
-  </style>
+
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
@@ -94,7 +90,7 @@ Canal Educativoa" src="./Wolox_files/logo_barra_blanco.png"> </a>
           <a data-toggle="collapse" href="http://wolox.stage.wisboo.com/dashboard/channels/1/design#configuration" class="collapsed" aria-expanded="false">
             <img alt="Configuration icon" class="icon" src="./Wolox_files/configuration_icon-fb55cbf820eb905ef48c351aafb8823f.png">Configuración</a>
         </li>
-        <li class="user-panel-sub-menu collapse" id="configuration" aria-expanded="false" style="height: 0px;">
+        <li class="user-panel-sub-menu collapse" id="configuration" aria-expanded="false">
           <ul>
             <li class="user-panel-sub-menu-item"><a href="http://wolox.stage.wisboo.com/dashboard/channels/1/general">General</a></li>
             <li class="user-panel-sub-menu-item"><a href="http://wolox.stage.wisboo.com/dashboard/channels/1/preferences">Preferencias</a></li>
@@ -103,13 +99,13 @@ Canal Educativoa" src="./Wolox_files/logo_barra_blanco.png"> </a>
         </li>
         <li>
           <a data-toggle="collapse" href="http://wolox.stage.wisboo.com/dashboard/channels/1/design#course" class="collapsed" aria-expanded="false">
-            <img alt="Course icon" class="icon" src="./Wolox_files/course_icon-c19fd7f186c0e8835afd9c0fc230afed.png">Cursos</a>
+            <img alt="Course icon" class="icon" src="./Wolox_files/course_icon-c19fd7f186c0e8835afd9c0fc230afed.png">Cominudad</a>
         </li>
-        <li class="user-panel-sub-menu collapse" id="course" aria-expanded="false" style="height: 0px;">
+        <li class="user-panel-sub-menu collapse" id="course" aria-expanded="false">
           <ul>
-            <li class="user-panel-sub-menu-item"><a href="http://wolox.stage.wisboo.com/dashboard/channels/1/course_info">Información</a></li>
-            <li class="user-panel-sub-menu-item"><a href="http://wolox.stage.wisboo.com/dashboard/channels/1/course_preferences">Preferencias</a></li>
-            <li class="user-panel-sub-menu-item"><a href="http://wolox.stage.wisboo.com/dashboard/channels/1/course_index">Índice y contenidos</a></li>
+            <li class="user-panel-sub-menu-item"><a href="">Usuarios</a></li>
+            <li class="user-panel-sub-menu-item"><a href="">Autores</a></li>
+            <li class="user-panel-sub-menu-item"><a href="">Grupos</a></li>
           </ul>
         </li>
       </ul>
@@ -117,73 +113,47 @@ Canal Educativoa" src="./Wolox_files/logo_barra_blanco.png"> </a>
     <div class="user-panel-main">
       <div class="edit-profile container-fluid">
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-md-12">
             <div class="title-underlined">
-              <h3>Contenidos</h3>
+
+              <h3>CONTENIDOS</h3>
             </div>
           </div>
-          <div class="col-sm-12" style="  vertical-align: top;  line-height: 30px;">
-            <a><i class="material-icons plus">&#xE145;</i></a> Crear nuevo modulo
-            <a data-toggle="tooltip" data-placement="left" title="Comienza a asignar contenidos a tu curso creando tu primer módulo" class="question-mark pull-right"> &#63;</a>
-          </div>
-        </div><br><br>
-
-    <div class="modules">
-        <div class="row">
-
-          <form role="form" class="courses-search form-horizontal">
-            <div class="col-md-12">
-              <div class="icons pull-right">
-                <a href=""><i class="material-icons done">&#xE876;</i></a>
-                &nbsp;
-              <a href=""> <i class="material-icons cross">&#xE5CD;</i></a>
-            </div>
-              <label for="inputEmail3" class="col-sm-3 control-label">MÓDULO 1:</label>
-              <div class="input-group input-group-lg modulo">
-                <input type="text" class="form-control" placeholder="Escribe el Titulo del Módulo">
-
-
-                <div class="input-group-addon">80</div>
-              </div>
-
-            </div>
-          </form>
         </div>
-      </div><br>
-       <div class="row">
-         <button type="submit" class="guardar btn btn-default pull-right">Guardar cambios</button>
-       </div>
-
+        <div class="row">
+          <i class="material-icons">&#xE145;</i>
+          <h5>Crear nuevo módulo</h5>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8">
-          <small>Todos los derechos reservados © 2015
-            <span class="clientName">wolox Canal Educativoa</span>
-          </small>
-          <br><a class="small" href="http://wisboo.com/" target="_blank">Crea tu propio portal educativo online con WISBOO</a></div>
-        <div class="col-sm-4">
-          <div class="pull-right">
-            <a href="http://wolox.com.ar/" target="_blank">
-              <span class="fa-stack"><i class="fa fa-globe fa-stack-1x"></i></span>
-            </a>
-            <a href="mailto:wolox@wolox.com.ar">
-              <span class="fa-stack"><i class="fa fa-envelope fa-stack-1x"></i></span>
-            </a>
-            <a href="https://www.linkedin.com/" target="_blank">
-              <span class="fa-stack"><i class="fa fa-linkedin fa-stack-1x"></i></span>
-            </a>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <small>Todos los derechos reservados © 2015
+              <span class="clientName">wolox Canal Educativoa</span>
+            </small>
+            <br><a class="small" href="http://wisboo.com/" target="_blank">Crea tu propio portal educativo online con WISBOO</a></div>
+          <div class="col-sm-4">
+            <div class="pull-right">
+              <a href="http://wolox.com.ar/" target="_blank">
+                <span class="fa-stack"><i class="fa fa-globe fa-stack-1x"></i></span>
+              </a>
+              <a href="mailto:wolox@wolox.com.ar">
+                <span class="fa-stack"><i class="fa fa-envelope fa-stack-1x"></i></span>
+              </a>
+              <a href="https://www.linkedin.com/" target="_blank">
+                <span class="fa-stack"><i class="fa fa-linkedin fa-stack-1x"></i></span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="./Wolox_files/application-49b885ffaac7a27fb7aa8c628b452cc1.js"></script>
-  <script src="./Wolox_files/slick.min.js"></script>
-  <script src="courses.js">
-  </script>
+    <script src="./Wolox_files/application-49b885ffaac7a27fb7aa8c628b452cc1.js"></script>
+    <script src="./Wolox_files/slick.min.js"></script>
+    <script src="courses.js">
+    </script>
 </body>
 
 </html>
