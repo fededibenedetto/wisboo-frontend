@@ -1,0 +1,77 @@
+i.material-icons.plus {
+  background-color: #fc55a6;
+  color: #ffffff;
+  padding: 5px;
+  margin-right: 5px;
+
+}
+
+.question-mark{
+  font-size: large;
+}
+button.guardar {
+background-color: whitesmoke;
+  color: rgb(188, 188, 188);
+}
+i.material-icons.add{
+  background-color: #00a9e8;
+  color: #fff;
+  border-radius: 14px;
+  padding: 2px;
+  vertical-align: middle;
+}
+.row{
+  font-size: medium;
+  color: rgb(126, 120, 120);
+}
+.agregar{
+  font-size: 14px;
+  margin-left: 20px !important;
+}
+.modules{
+  margin-left: 10px !important;
+  background-color: rgb(245, 245, 246);
+  margin-bottom: 4px;
+}
+a.EDTDM {
+  font-size: x-large;
+  color: rgb(126, 120, 120);
+}
+a.EDTDM:hover{
+  color: rgb(126, 120, 120) !important;
+  text-decoration: underline !important;
+}
+i.material-icons.eye {
+  vertical-align: middle;
+  margin-top: 14px;
+  color: silver;
+}
+i.material-icons.cross {
+  background-color: rgb(188, 188, 188);
+  padding: 1px 1px 1px 1px;
+  border-radius: 9px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 15px;
+  vertical-align: middle;
+  margin-top: 14px;
+  }
+
+  i.material-icons.eye:active{
+    color: #fc55a6;
+  }
+  i.material-icons.edit {
+    background-color: #00a9e8;
+    color: white;
+    border-radius: 16px;
+    padding: 4px;
+    font-size: 13px !important;
+    visibility: hidden;
+
+  }
+  h5.module1:hover i.material-icons.edit {
+    visibility: visible;
+  }
+  .eye:active i.material-icons.cross{
+    visibility: hidden;
+  }
