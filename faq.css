@@ -1,0 +1,71 @@
+i.material-icons.plus {
+  background-color: #fc55a6;
+  color: #ffffff;
+  padding: 5px;
+  margin-right: 5px;
+}
+button.btn.btn-default.vista {
+  background-color: rgb(252, 85, 166);
+  color: white;
+  padding: 6px;
+}
+button.btn.btn-default.publicar {
+  background-color: rgb(0, 173, 238);
+  color: white;
+  padding: 6px;
+}
+button.btn.btn-defaul.guardar {
+  background-color: whitesmoke;
+  padding: 6px;
+}
+small, .small {
+  font-size: 14px;
+  font-weight: inherit;
+}
+.cursos-menu {
+  background-color: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid #e2dede !important;
+  font-size: 16px !important;
+  padding: 10px 0px !important;
+}
+li.active .cursos-menu{
+  color: #04B7F1 !important;
+  border-bottom: 1px solid #04B7F1 !important;
+}
+button#dropdownMenu1 span.caret {
+  color: #ee4c9b !important;
+  margin-top: 15px !important;
+}
+button#dropdownMenu1 {
+  font-size: 22px !important;
+  width: 100% !important;
+  border: 1px solid #FFFFFF !important;
+  height: 60px;
+}
+i.material-icons.square{
+  margin-top: 7px !important;
+  color: rgb(188, 188, 188);
+  font-size: 20px;
+  margin-right: 10px !important;
+}
+button#dropdownMenu1:hover span.caret{
+  color: #ee4c9b !important;
+}
+span.dropdown{
+  font-size: 22px;
+}
+button#dropdownMenu1:hover span.dropdown{
+  color:  #333333 !important;
+}
+i.material-icons.edit {
+  background-color: #00a9e8;
+  color: white;
+  border-radius: 16px;
+  padding: 4px;
+  font-size: 13px !important;
+  visibility: hidden;
+}
+div.dd:hover i.material-icons.edit {
+  visibility: visible;
+}
