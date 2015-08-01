@@ -4,12 +4,21 @@ thead {
 table.table.table-hover {
   font-size: 15px;
 }
+tr.user-row {
+    height: 42px;
+}
+tr.user-row td {
+    min-width: 50px;
+}
+
 .edit-profile input[type="checkbox"] {
   min-height: 0px;
   vertical-align: middle;
 }
-
-.edit-profile i.material-icons {
+.edit-profile td.td-user{
+  min-width: 240px;
+}
+.edit-profile i.material-icons.dropdown-toggle {
   font-size: 10px;
   background-color: #999;
   color: #fff;
@@ -17,7 +26,7 @@ table.table.table-hover {
   padding: 3px;
     margin: 1px
 }
-.edit-profile i.material-icons:hover{
+.edit-profile i.dropdown-toggle.material-icons:hover{
   background-color : #00a9e8
 }
 
@@ -25,6 +34,14 @@ table.table.table-hover {
   height: 25px;
   width: 25px;
   border-radius: 25px;
+}
+
+.user-row .btn-group{
+  display: none;
+}
+
+.user-row:hover .btn-group{
+  display: inline-block;
 }
 
 .edit-profile i.material-icons.cross {
