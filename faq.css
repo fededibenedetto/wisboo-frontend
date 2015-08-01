@@ -1,23 +1,19 @@
 .faq .panel-group .panel+.panel {
-    margin: 0px;
+  margin: 0px;
 }
-
-.faq .panel-heading:hover{
+.faq .panel-heading:hover {
   background-color: #efefef;
 }
-
 .faq span.caret.pull-right {
-    margin-top: 5px;
+  margin-top: 5px;
 }
-
-.faq #accordion .panel.panel-default{
+.faq #accordion .panel.panel-default {
   border-bottom: solid 1px #efefef;
+  cursor: pointer;
 }
-
 #collapseFaqForm label.col-sm-2.control-label {
-    font-weight: lighter;
+  font-weight: lighter;
 }
-
 i.material-icons.plus {
   background-color: #fc55a6;
   color: #ffffff;
@@ -49,7 +45,7 @@ small, .small {
   font-size: 16px !important;
   padding: 10px 0px !important;
 }
-li.active .cursos-menu{
+li.active .cursos-menu {
   color: #04B7F1 !important;
   border-bottom: 1px solid #04B7F1 !important;
 }
@@ -63,22 +59,21 @@ button#dropdownMenu1 {
   border: 1px solid #FFFFFF !important;
   height: 60px;
 }
-i.material-icons.square{
+i.material-icons.square {
   margin-top: 7px !important;
   color: rgb(188, 188, 188);
   font-size: 20px;
   margin-right: 10px !important;
 }
-button#dropdownMenu1:hover span.caret{
+button#dropdownMenu1:hover span.caret {
   color: #ee4c9b !important;
 }
-span.dropdown{
+span.dropdown {
   font-size: 22px;
 }
-button#dropdownMenu1:hover span.dropdown{
-  color:  #333333 !important;
+button#dropdownMenu1:hover span.dropdown {
+  color: #333333 !important;
 }
-
 .faq i.material-icons.edit {
   background-color: #00a9e8;
   color: white;
@@ -87,13 +82,13 @@ button#dropdownMenu1:hover span.dropdown{
   font-size: 12px;
 }
 .faq i.material-icons.cross {
-  background-color:  #ccc;
+  background-color: #ccc;
   padding: 4px;
   border-radius: 14px;
   color: #fff;
   font-size: 12px;
 }
 .faq h4.panel-title {
-    color: #666;
-    font-size: 16px;
+  color: #666;
+  font-size: 16px;
 }
