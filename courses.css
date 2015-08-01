@@ -19,12 +19,10 @@ i.material-icons.cross {
   border-radius: 8px;
   font-size: 10px;
 }
-
 i.material-icons.cross:hover {
   background-color: #04B7F1;
 }
-
-i.material-icons.publish:hover{
+i.material-icons.publish:hover {
   color: #04B7F1;
 }
 .cursos-menu {
@@ -34,11 +32,15 @@ i.material-icons.publish:hover{
   font-size: 16px !important;
   padding: 10px 0px !important;
 }
-
-li.active .cursos-menu{
+li.active .cursos-menu {
   color: #04B7F1 !important;
   border-bottom: 1px solid #04B7F1 !important;
 }
 .col-sm-1.edit {
   padding-top: 10px;
+}
+.privado {
+  margin-top: 20px;
+  margin-left: -15px;
+  padding-left: 15px;
 }
