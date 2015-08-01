@@ -2,8 +2,8 @@ i.material-icons {
   font-size: 16px;
   color: #999;
 }
-i.material-icons.lock {
-  margin-top: 20px;
+.privado i.material-icons.lock {
+  margin-top: 30px;
   position: absolute;
   left: 0px;
   background-color: rgb(238, 76, 155);
@@ -40,7 +40,6 @@ li.active .cursos-menu {
   padding-top: 10px;
 }
 .privado {
-  margin-top: 20px;
   margin-left: -15px;
   padding-left: 15px;
 }
