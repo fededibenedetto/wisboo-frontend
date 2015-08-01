@@ -1,3 +1,19 @@
+.faq .panel-group .panel+.panel {
+    margin: 0px;
+}
+
+.faq .panel-heading:hover{
+  background-color: #efefef;
+}
+
+.faq span.caret.pull-right {
+    margin-top: 5px;
+}
+
+.faq #accordion .panel.panel-default{
+  border-bottom: solid 1px #efefef;
+}
+
 i.material-icons.plus {
   background-color: #fc55a6;
   color: #ffffff;
@@ -58,14 +74,22 @@ span.dropdown{
 button#dropdownMenu1:hover span.dropdown{
   color:  #333333 !important;
 }
-i.material-icons.edit {
+
+.faq i.material-icons.edit {
   background-color: #00a9e8;
   color: white;
-  border-radius: 16px;
+  border-radius: 14px;
   padding: 4px;
-  font-size: 13px !important;
-  visibility: hidden;
+  font-size: 12px;
 }
-div.dd:hover i.material-icons.edit {
-  visibility: visible;
+.faq i.material-icons.cross {
+  background-color:  #ccc;
+  padding: 4px;
+  border-radius: 14px;
+  color: #fff;
+  font-size: 12px;
+}
+.faq h4.panel-title {
+    color: #666;
+    font-size: 16px;
 }
