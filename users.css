@@ -62,13 +62,17 @@ a.dropdown-toggle.material-icons.main {
   font-size: 18px;
   margin-left: 8px;
 }
-a.dropdown-toggle.material-icons.main:hover, a.dropdown-toggle.material-icons.main:active, a.dropdown-toggle.material-icons:focus, .btn-group.open a.dropdown-toggle.material-icons {
+a.dropdown-toggle.material-icons.main:hover, a.dropdown-toggle.material-icons.main:active, a.dropdown-toggle.material-icons.main:focus, .btn-group.open a.dropdown-toggle.material-icons.main {
   background-color: #00a9e8;
   color: white;
   box-shadow: none;
   border-radius: 16px;
   padding: 2px 2px 2px 3px;
 }
+.edit-profile .btn-group.open .dropdown-toggle {
+  box-shadow: none;
+}
+
 .courses-search ul.dropdown-menu.dropdown-menu-right, .invite-users ul.dropdown-menu {
   width: 200px;
 }
