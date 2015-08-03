@@ -92,8 +92,8 @@ a.dropdown-toggle.material-icons.main:hover, a.dropdown-toggle.material-icons.ma
   content: "";
   display: inline-block;
   position: absolute;
-  width: 17px;
-  height: 17px;
+  width: 14px;
+  height: 14px;
   left: 0;
   margin-left: -20px;
   border: 1px solid #cccccc;
@@ -167,5 +167,5 @@ td.checkbox label {
 }
 
 td.checkbox {
-  margin:0px; 
+  margin:0px;
 }

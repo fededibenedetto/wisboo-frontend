@@ -106,8 +106,8 @@ button#dropdownMenu1:hover span.dropdown {
   content: "";
   display: inline-block;
   position: absolute;
-  width: 17px;
-  height: 17px;
+  width: 14px;
+  height: 14px;
   left: 0;
   margin-left: -20px;
   border: 1px solid #cccccc;
