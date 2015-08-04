@@ -34,9 +34,12 @@
   <!-- 
 
     Load libs
+    Replace by final assets
 
   -->
-  <link rel="stylesheet" type="text/css" href="">
+  <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.css">
+
+
   <style>
     .cke {
       visibility: hidden;
@@ -81,7 +84,7 @@ Canal Educativoa" src="./Wolox_files/logo_barra_blanco.png"> </a>
   </div>
 
 <div class="container">
-  <div class="modal fade in" id="myModal">
+  <div class="modal fade in" id="question-modal">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header super-light-grey">
@@ -99,7 +102,8 @@ Canal Educativoa" src="./Wolox_files/logo_barra_blanco.png"> </a>
             <div class="form-input full-input mid-space-down">
               <div class="input question required question">
                 <label class="uppercase osans-cond bold small-space-down" data-skip="true">Pregunta</label>
-                <input autofocus="autofocus" class="string question required" id="question" name="user[question]" placeholder="Escribe tu pregunta o afirmación aquí" type="question" value="">
+                <input autofocus="autofocus" class="clearable string question required" id="question" name="user[question]" placeholder="Escribe tu pregunta o afirmación aquí" type="question" value="">
+                
               </div>
             </div>
 
@@ -110,25 +114,36 @@ Canal Educativoa" src="./Wolox_files/logo_barra_blanco.png"> </a>
               </div>
             </div>
 
-
-
-
-            <div class="form-group">
+            <div class="form-group" id="option-checkbox-1">
               <label class="checkbox-inline">
                 <input class="checkbox-for-input" type="checkbox" value="option2">
-                  <div class="form-input full-input mid-space-down">
+                  <div class="form-input full-input">
                     <div class="input question required question">
-                      <input autofocus="autofocus" class="string question required" id="question" name="user[question]" placeholder="Escribe tu pregunta o afirmación aquí" type="question" value="">
+                      <input autofocus="autofocus" class="option-clearable string question required" id="question" name="user[question]" placeholder="Escribe tu pregunta o afirmación aquí" type="question" value="" data-target="option-checkbox-1">
+                      
                     </div>
                   </div>
               </label>
             </div>
 
-            <div class="form-group">
-              <a class="btn" href="#"><i class="fa fa-fw fa-lg fa-plus-circle"> </i> Agregar nueva opción</a>
+            <div class="form-group" id="option-checkbox-2">
+              <label class="checkbox-inline">
+                <input class="checkbox-for-input" type="checkbox" value="option2">
+                  <div class="form-input full-input">
+                    <div class="input question required question">
+                      <input autofocus="autofocus" class="option-clearable string question required" id="question" name="user[question]" placeholder="Escribe tu pregunta o afirmación aquí" type="question" value="" data-target="option-checkbox-2">
+                      
+                    </div>
+                  </div>
+              </label>
             </div>
 
-            <div class="form-input full-input mid-space-down">
+
+            <div class="form-group mid-space-top">
+              <a class="dark-grey-text" href="#"><i class="fa fa-lg fa-plus-circle"> </i> Agregar nueva opción</a>
+            </div>
+
+            <div class="form-input full-input mid-space-down mid-space-top">
               <div class="input question required question">
                 <label class="uppercase osans-cond bold small-space-down" data-skip="true">Contenido Relacionado</label>
                 <p class="light osans dark-grey-text small-space-down">Selecciona a qué contenido hace referencia esta actividad para que tus alumnos puedan repasar los conceptos.</p>
@@ -141,7 +156,11 @@ Canal Educativoa" src="./Wolox_files/logo_barra_blanco.png"> </a>
 
 
             <div class="form-group">
-              <label for="exampleInputFile">ACTIVIDAD OBLIGATORIA</label>
+              <label class="uppercase osans-cond bold small-space-down" for="exampleInputFile">Actividad Obligatoria</label>
+
+              <div class="select-padding">
+                
+              </div>
               <div class="select-wrapper">
                 <input name="user[hidden_profile]" type="hidden" value="false">
                 <input checked="checked" class="make-bootstrap-switch" data-off-color="off-color" data-off-text="&amp;nbsp;" data-on-color="on-color" data-on-text="&amp;nbsp;" id="user_hidden_profile" name="user[hidden_profile]" type="checkbox" value="true">
@@ -194,13 +213,6 @@ Canal Educativoa" src="./Wolox_files/logo_barra_blanco.png"> </a>
   <script src="./Wolox_files/application-49b885ffaac7a27fb7aa8c628b452cc1.js"></script>
   <script src="./Wolox_files/slick.min.js"></script>
   <script src="exercises.js"> </script>
-
-  <script type="text/javascript">
-      $(window).load(function(){
-          $('#myModal').modal('show');
-          console.debug('test');
-      });
-  </script>
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   .modal-lg{
-      width:760px;
+      width:600px;
   }
 
   .modal-sm{
@@ -9,6 +9,9 @@
   }
 }
 
+.modal-footer {
+    padding: 15px 0;
+}
 .form-input input,
 .form-input select {
 	height:36px;
@@ -45,14 +48,87 @@ select.form-control {
 
 input[type="checkbox"].checkbox-for-input {
     margin-top: 10px;
+    margin-left: -22px;
 }
 
 .checkbox-inline {
 	width: 100%;
+	margin-top: 0;
 }
 
 .checkbox-inline input {
 	width: 100%;
+}
+
+.select-wrapper {
+	margin-top: 12px;
+}
+
+label {
+	margin-top: 16px;
+}
+
+input[type="reset"] {
+   	background-image: url( http://png-5.findicons.com/files/icons/1150/tango/32/edit_clear.png );
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 38px;
+	width: 38px;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	position: relative;
+	top: -9px;
+	left: -44px;
+}
+
+.search-box,.close-icon,.search-wrapper {
+	position: relative;
+	padding: 10px;
+}
+.search-wrapper {
+	width: 500px;
+	margin: auto;
+	margin-top: 50px;
+}
+.search-box {
+	width: 80%;
+	border: 1px solid #ccc;
+  outline: 0;
+  border-radius: 15px;
+}
+.search-box:focus {
+	box-shadow: 0 0 15px 5px #b0e0ee;
+	border: 2px solid #bebede;
+}
+.close-icon {
+	border:1px solid transparent;
+	background-color: transparent;
+	display: inline-block;
+	vertical-align: middle;
+  outline: 0;
+  cursor: pointer;
+}
+.close-icon:after {
+	content: "X";
+	display: block;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	background-color: #FA9595;
+	z-index:1;
+	right: 35px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	padding: 2px;
+	border-radius: 50%;
+	text-align: center;
+	color: white;
+	font-weight: normal;
+	font-size: 12px;
+	box-shadow: 0 0 2px #E50F0F;
+	cursor: pointer;
 }
 /*.modal-dialog .modal-content .modal-header {
     background-color: #f9f9f9;

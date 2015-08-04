@@ -1,6 +1,8 @@
 {
-    "name": "wisboo",
-    "dependencies": {
-        "bootstrap-switch": "latest"
-    }
+  "name": "wisboo",
+  "dependencies": {
+    "bootstrap-switch": "latest",
+    "fontawesome": "~4.4.0",
+    "jquery-clearinput": "*"
+  }
 }
