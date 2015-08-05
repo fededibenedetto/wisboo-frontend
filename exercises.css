@@ -131,6 +131,41 @@ input[type="reset"] {
 	box-shadow: 0 0 2px #E50F0F;
 	cursor: pointer;
 }
+
+div.form-group.add-question-option {
+	margin: 26px 0 14px;
+}
+
+div.form-group.add-question-option > a {
+	margin-top: 12px;
+	color: #4c4c4c;
+}
+
+div.form-group.add-question-option> a:active,
+div.form-group.add-question-option> a:focus,
+div.form-group.add-question-option> a:hover {
+	color: #00a9e8;
+}
+
+div.form-group.add-question-option > a > i{
+	margin-right: 10px;
+}
+
+.switch-color-on {
+	color: #00a9e8;
+}
+
+div.bootstrap-switch span.bootstrap-switch-handle-on.bootstrap-switch-primary, 
+div.bootstrap-switch span.bootstrap-switch-handle-off.bootstrap-switch-primary {
+    color: #fff;
+    background: #00a9e8;
+}
+
+div.bootstrap-switch span.bootstrap-switch-handle-on.bootstrap-switch-default, 
+div.bootstrap-switch span.bootstrap-switch-handle-off.bootstrap-switch-default {
+    color: #5c5c5c;
+    background: #f9f9f9;
+}
 /*.modal-dialog .modal-content .modal-header {
     background-color: #f9f9f9;
 }
