@@ -3,6 +3,7 @@
   "dependencies": {
     "bootstrap-switch": "latest",
     "fontawesome": "~4.4.0",
-    "jquery-clearinput": "*"
+    "jquery-clearinput": "*",
+    "bootstrap-star-rating": "~3.5.3"
   }
 }
