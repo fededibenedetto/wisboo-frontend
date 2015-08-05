@@ -1,0 +1,64 @@
+p.well-notice {
+    font-size: 1.3em;
+    text-align: center;
+    padding: 12px 6px;
+    font-weight: 300;
+}
+
+div.autor-description h4 {
+    font-size: .94em;
+    margin: 20px 0 6px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+div.autor-description h4 + p {
+    font-size: .82em;
+    text-transform: uppercase;
+}
+
+div.autor-description p {
+    font-size: .75em;
+    padding-right: 26px;
+}
+
+div.autor.open {
+	margin-bottom: 12px;
+}
+
+div.autor.open:hover {
+	background-color: #e9e9e9;
+}
+
+div.autor img {
+	padding: 20px 0 20px 20px;
+}
+
+div.autor-actions p {
+	padding-top: 10px;
+	text-align: right;
+}
+
+hr.autor-divider {
+    margin: 12px 0;
+}
+
+div.autor-new {
+	margin-top: 28px;
+}
+
+div.autor-new a {
+	color: #4c4c4c;
+}
+
+div.autor-new a:hover {
+	color: #ee4c9b;
+}
+
+div.autor-new span {
+    padding: 8px 10px;
+    background-color: #ee4c9b;
+    margin-right: 10px;
+    color: #fff;
+    font-weight: 300;
+}
